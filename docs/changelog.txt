@@ -1,0 +1,10 @@
+Changelog for Log404
+
+Log404 1.0.0
+---------------------------------
+Initial Version
+
+-- Custom CMP to review 404 urls
+-- Download CSV file functionality
+-- Clear Log functionality
+-- EN and IT Lexicon

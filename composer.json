@@ -1,0 +1,56 @@
+{
+    "name": "bizen-srl/log404",
+    "description": "",
+    "type": "modx-package",
+    "keywords": ["modx","repoman"],
+    "homepage": "https://github.com/bizen-srl/log404",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Manuel Barbiero",
+            "email": "manuel.barbiero@bizen.it",
+            "homepage" : "https://www.bizen.it/"
+        }        
+    ],
+    "support": {
+        "email": "manuel.barbiero@bizen.it",
+        "issues": "https://github.com/bizen-srl/log404/issues",
+        "forum": "http://forums.modx.com/",
+        "wiki": "https://github.com/bizen-srl/log404/wiki",
+        "source": "https://github.com/bizen-srl/log404.git"
+    },    
+    "require": {
+        "php": ">=5.3",
+        "league/csv": "^9.4"
+    },
+    "autoload": {
+        "classmap":[
+            "model/",
+            "controllers/",
+            "model/log404/"
+        ]
+    },
+    "extra": {
+        "package_name": "Log404",
+        "namespace": "log404",
+        "version": "1.0.0",
+        "release": "pl",
+        "category":"Log 404",
+        "orm_path": "model/",
+        "seeds_path": ["model/seeds/"],
+        "packages":[
+            {
+                "pkg":"log404",
+                "path":"model/",
+                "table_prefix": "modx_"
+            }
+        ],
+        "build_attributes": {
+            "Log404Items": {
+                "preserve_keys":true,
+                "update_object":true,
+                "unique_key":"id"
+            }
+        }
+    }
+}

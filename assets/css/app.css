@@ -1,0 +1,14 @@
+/* CSS for Log 404 component */
+
+#modx-body-tag *, #modx-body-tag :after, #modx-body-tag :before {
+	box-sizing: initial;
+}
+
+#modx-content {
+	overflow: scroll;
+	height: 100%;
+}
+
+#modx-body-tag #modx-content * {
+	box-sizing: border-box;
+}
