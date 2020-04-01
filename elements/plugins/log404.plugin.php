@@ -23,7 +23,7 @@ if (!($log404 instanceof Log404)) return;
 if ($modx->user->hasSessionContext('mgr')) return;
 
 // Check if the useragent needs to be ignored
-if($log404->checkUseragent()) return;
+if($log404->checkUseragent($_SERVER['HTTP_USER_AGENT'])) return;
 
 // Let's start the magic
 switch ($modx->event->name) {
